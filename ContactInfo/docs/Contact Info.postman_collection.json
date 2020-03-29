@@ -1,0 +1,161 @@
+{
+	"id": "2ae35d23-6c8b-7e85-ae24-413d9350ac6d",
+	"name": "Contact Info",
+	"description": "postman collection for Add/update/delete contact info",
+	"order": [
+		"617b7573-d23a-16f4-d35f-dbcbca2e33dd",
+		"39dbd1e9-ef9f-966a-92b5-72c168aab73b",
+		"1248867d-59d1-5262-e28c-4f3702478cd2",
+		"ba76eede-278f-74d2-4dfc-4424a138cb3d",
+		"5344e304-135c-5ba0-27e9-c1572d1c679e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1585477401196,
+	"owner": "10889149",
+	"public": false,
+	"requests": [
+		{
+			"id": "1248867d-59d1-5262-e28c-4f3702478cd2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/v1/contactInfos/93688a5e-8250-4ae6-8cc5-2365c34dc561",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585479635095,
+			"name": "ContactInfo-Update Contact",
+			"description": "update person",
+			"collectionId": "2ae35d23-6c8b-7e85-ae24-413d9350ac6d",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstName\":\"Aditi\",\n\t\"lastName\":\"Test2\",\n\t\"email\":\"test.test2@test.com\",\n\t\"phoneNumber\":\"12345\"\n}"
+		},
+		{
+			"id": "39dbd1e9-ef9f-966a-92b5-72c168aab73b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/v1/contactInfos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585479603203,
+			"name": "ContactInfo-Create Contact",
+			"description": "",
+			"collectionId": "2ae35d23-6c8b-7e85-ae24-413d9350ac6d",
+			"responses": [],
+			"rawModeData": "{\n\t\"firstName\":\"Test\",\n\t\"lastName\":\"Test2\",\n\t\"email\":\"test.test2@test.com\",\n\t\"phoneNumber\":\"12345\"\n}"
+		},
+		{
+			"id": "5344e304-135c-5ba0-27e9-c1572d1c679e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/v1/contactInfos/93688a5e-8250-4ae6-8cc5-2365c34dc561",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585479681222,
+			"name": "ContactInfo-delete Contact",
+			"description": "delete person",
+			"collectionId": "2ae35d23-6c8b-7e85-ae24-413d9350ac6d",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "617b7573-d23a-16f4-d35f-dbcbca2e33dd",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/v1/contactInfos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585477790688,
+			"name": "ContactInfo-Get all Contacts",
+			"description": "http://localhost:8080/tass-pulish-subsctibe/subscription",
+			"collectionId": "2ae35d23-6c8b-7e85-ae24-413d9350ac6d",
+			"responses": []
+		},
+		{
+			"id": "ba76eede-278f-74d2-4dfc-4424a138cb3d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/v1/contactInfos/93688a5e-8250-4ae6-8cc5-2365c34dc561",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585479671953,
+			"name": "ContactInfo-patch update Contact",
+			"description": "update person",
+			"collectionId": "2ae35d23-6c8b-7e85-ae24-413d9350ac6d",
+			"responses": [],
+			"rawModeData": "{\n\t\"phoneNumber\":\"12345666\"\n}"
+		}
+	]
+}
